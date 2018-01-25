@@ -1,0 +1,51 @@
+﻿    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="project3Home.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>"]["emple Registration App</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <!--not sure i'll need this-->
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table style="font-family: Arial">
+    <tr>
+        <td colspan="2" style="width: 100%; height: 80px; text-align: center; 
+            background-color: #BDBDBD;">
+            <h1>
+                Welcome to the "]["emple Registration Application
+            </h1>
+        </td>
+    </tr>
+    <tr>
+        <td style="height: 100px; background-color: #D8D8D8; width: 150px">
+            <h3>
+                Menu--add buttons to navigate to other pages here
+            </h3>
+            <asp:Button ID="btnHome" runat="server" Text="Home" OnClick="btnHome_Click" /><br /><br />
+            <asp:Button ID="btnAdmin" runat="server" Text="Admin" OnClick="btnAdmin_Click" /><br /><br />
+            <asp:Button ID="btnRegister" runat="server" Text="Student Register" OnClick="btnRegister_Click" Width="122px" />
+            <br />
+            <br />
+            <asp:Button ID="txtNewStudent" runat="server" Height="26px" OnClick="txtNewStudent_Click" Text="New Student" Width="121px" />
+        </td>
+        <td style="height: 500px; background-color: #E6E6E6; width: 100%">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                <!--Section that changes on a page by page basis-->
+
+            </asp:ContentPlaceHolder>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="background-color: #BDBDBD; text-align: center">
+            <b>A John Wilson Production -- CIS3342 Pascucci N02</b>
+        </td>
+    </tr>
+</table>
+    </form>
+</body>
+</html>
